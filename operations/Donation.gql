@@ -16,7 +16,7 @@ query Donation($id: ID! $self: String){
 	}
 	target {
 	    id
-	    title
+	    name
 	    category {
 		id
 	    }
