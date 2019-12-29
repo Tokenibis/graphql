@@ -4,7 +4,8 @@ query Person($id: ID! $self: String){
 	name
 	username
 	avatar
-	balance
+	donated
+	dateJoined
 	followerCount
 	followingCount
 	isFollowing: follower(id: $self) {
