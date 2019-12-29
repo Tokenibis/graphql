@@ -1,5 +1,6 @@
 query Notifier($id: ID!) {
     person(id: $id) {
+	id
 	notifier {
 	    id
 	}
