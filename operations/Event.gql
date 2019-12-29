@@ -28,6 +28,13 @@ query Event($id: ID! $self: String){
 		}
 	    }
 	}
+	hasBookmarked: bookmark(id: $self) {
+	    edges {
+		node {
+		    id
+		}
+	    }
+	}
 	hasRsvp: rsvp(id: $self) {
 	    edges {
 		node {

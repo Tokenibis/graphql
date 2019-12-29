@@ -26,6 +26,13 @@ query EventList($self: String $search: String $byUser: String $byFollowing: Stri
 			}
 		    }
 		}
+		hasBookmarked: bookmark(id: $self) {
+		    edges {
+			node {
+			    id
+			}
+		    }
+		}
 		hasRsvp: rsvp(id: $self) {
 		    edges {
 			node {
