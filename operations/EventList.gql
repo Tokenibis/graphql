@@ -8,6 +8,8 @@ query EventList($self: String $search: String $byUser: String $byFollowing: Stri
   		description
   		created
 		date
+		likeCount
+		rsvpCount
 		user {
 		    id
 		    name

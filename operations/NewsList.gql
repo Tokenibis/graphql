@@ -7,6 +7,7 @@ query NewsList($self: String $search: String $byUser: String $byFollowing: Strin
 		image
 		description
 		created
+		likeCount
 		user {
 		    id
 		    name
