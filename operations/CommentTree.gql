@@ -5,6 +5,7 @@ query CommentTree($hasParent: String! $self: String) {
 		id
 		description
 		created
+		likeCount
 		user {
 		    id
 		    name

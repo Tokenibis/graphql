@@ -4,6 +4,7 @@ query Post($id: ID! $self: String){
 	title
 	created
 	description
+	likeCount
 	user {
 	    id
 	    name

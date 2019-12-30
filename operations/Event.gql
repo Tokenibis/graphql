@@ -9,6 +9,7 @@ query Event($id: ID! $self: String){
 	address
 	latitude
 	longitude
+	rsvpCount
 	user {
 	    id
 	    name

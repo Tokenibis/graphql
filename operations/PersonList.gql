@@ -1,5 +1,5 @@
-query PersonList($self: String $search: String $followedBy: String $followerOf: String $orderBy: String $first: Int $after: String) {
-    allPeople(search: $search followedBy: $followedBy followerOf: $followerOf orderBy: $orderBy first: $first after: $after) {
+query PersonList($self: String $search: String $followedBy: String $followerOf: String $likeFor: String $rsvpFor: String $orderBy: String $first: Int $after: String) {
+    allPeople(search: $search followedBy: $followedBy followerOf: $followerOf likeFor: $likeFor rsvpFor: $rsvpFor orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id
