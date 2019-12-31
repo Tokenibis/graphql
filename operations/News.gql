@@ -6,6 +6,7 @@ query News($id: ID! $self: String){
 	description
 	image
 	likeCount
+	link
 	user {
 	    id
 	    name
