@@ -7,8 +7,6 @@ query Event($id: ID! $self: String){
 	description
 	date
 	address
-	latitude
-	longitude
 	link
 	likeCount
 	rsvpCount
