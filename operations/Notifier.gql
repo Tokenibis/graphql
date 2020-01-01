@@ -3,7 +3,7 @@ query Notifier($id: ID!) {
 	id
 	notifier {
 	    id
-	    hasUnseen
+	    unseenCount
 	}
     }
 }
