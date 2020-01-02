@@ -10,6 +10,7 @@ query News($id: ID! $self: String){
 	user {
 	    id
 	    name
+	    username
 	    avatar
 	    nonprofit {
 		id

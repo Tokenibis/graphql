@@ -4,8 +4,7 @@ query NonprofitList($self: String $search: String $followedBy: String $orderBy: 
   	    node {
 		id
 		username
-		id
-		title
+		name
 		avatar
   		description
 		category {

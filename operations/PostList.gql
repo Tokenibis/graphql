@@ -10,6 +10,7 @@ query PostList($self: String $search: String $byUser: String $byFollowing: Strin
 		user {
 		    id
 		    name
+		    username
 		    avatar
 		    person {
 			id

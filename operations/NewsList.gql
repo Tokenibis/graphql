@@ -11,6 +11,7 @@ query NewsList($self: String $search: String $byUser: String $byFollowing: Strin
 		user {
 		    id
 		    name
+		    username
 		    avatar
 		    nonprofit {
 			id

@@ -8,6 +8,7 @@ query Post($id: ID! $self: String){
 	user {
 	    id
 	    name
+	    username
 	    avatar
 	    person {
 		id
