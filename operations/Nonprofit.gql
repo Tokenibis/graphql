@@ -7,6 +7,9 @@ query Nonprofit($id: ID! $self: String){
 	link
 	avatar
 	fundraised
+	donationFromCount
+	newsCount
+	eventCount
 	isFollowing: follower(id: $self) {
 	    edges {
 		node {
