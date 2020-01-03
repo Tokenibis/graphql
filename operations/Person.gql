@@ -7,7 +7,8 @@ query Person($id: ID! $self: String){
 	donated
 	dateJoined
 	followerCount
-	followingCount
+	followingCountPerson
+	followingCountNonprofit
 	donationToCount
 	transactionToCount
 	postCount

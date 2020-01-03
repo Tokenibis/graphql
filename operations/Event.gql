@@ -6,6 +6,7 @@ query Event($id: ID! $self: String){
 	created
 	description
 	date
+	duration
 	address
 	link
 	likeCount
