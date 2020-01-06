@@ -18,7 +18,6 @@ query Event($id: ID! $self: String){
 	    avatar
 	    nonprofit {
 		id
-		title
 		category {
 		    id
 		}
