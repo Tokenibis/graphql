@@ -11,6 +11,7 @@ query Person($id: ID! $self: String){
 	followingCountNonprofit
 	donationToCount
 	transactionToCount
+	transactionFromCount
 	postCount
 	eventRsvpCount
 	isFollowing: follower(id: $self) {
