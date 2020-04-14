@@ -18,6 +18,9 @@ query TransactionList($self: String $search: String $byUser: String $byFollowing
 		    person {
 			id
 		    }
+		    nonprofit {
+			id
+		    }
 		}
 		hasLiked: like(id: $self) {
 		    edges {

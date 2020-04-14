@@ -1,5 +1,5 @@
 query Settings($id: ID!) {
-    person(id: $id) {
+    ibisUser(id: $id) {
 	username
 	visibilityDonation
 	visibilityTransaction

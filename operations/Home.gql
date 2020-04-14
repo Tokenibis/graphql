@@ -1,9 +1,15 @@
 query Home($id: ID!) {
-    person(id: $id) {
+    ibisUser(id: $id) {
 	id
 	avatar
 	username
 	name
 	balance
+	person {
+	    id
+	}
+	nonprofit {
+	    id
+	}
     }
 }

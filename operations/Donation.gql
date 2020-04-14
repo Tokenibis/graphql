@@ -13,6 +13,9 @@ query Donation($id: ID! $self: String){
 	    person {
 		id
 	    }
+	    nonprofit {
+		id
+	    }
 	}
 	target {
 	    id

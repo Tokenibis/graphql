@@ -21,6 +21,9 @@ query DonationList($self: String $search: String $byUser: String $byFollowing: S
 		    person {
 			id
 		    }
+		    nonprofit {
+			id
+		    }
 		}
 		hasLiked: like(id: $self) {
 		    edges {

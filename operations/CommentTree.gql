@@ -14,6 +14,9 @@ query CommentTree($hasParent: String! $self: String) {
 		    person {
 			id
 		    }
+		    nonprofit {
+			id
+		    }
 		}
 		hasLiked: like(id: $self) {
 		    edges {
