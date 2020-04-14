@@ -1,5 +1,5 @@
 query DonationForm($id: ID! $target: ID!) {
-    user: person(id: $id) {
+    user: ibisUser(id: $id) {
 	id
 	balance
     }

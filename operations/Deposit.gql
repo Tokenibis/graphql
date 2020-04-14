@@ -1,6 +1,8 @@
 query Deposit($id: ID!) {
-    person(id: $id) {
-	id
-	balance
+    ibisUser(id: $id) {
+	person{
+	    id
+	    balance
+	}
     }
 }

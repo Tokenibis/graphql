@@ -17,6 +17,9 @@ query PersonList($self: String $search: String $followedBy: String $followerOf: 
 			}
 		    }
 		}
+		ibisuserPtr {
+		    id
+		}
   	    }
 	    cursor
 	}

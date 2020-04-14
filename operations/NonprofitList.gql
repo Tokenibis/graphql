@@ -17,6 +17,9 @@ query NonprofitList($self: String $search: String $followedBy: String $orderBy: 
 			}
 		    }
 		}
+		ibisuserPtr {
+		    id
+		}
   	    }
 	    cursor
 	}
