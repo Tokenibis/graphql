@@ -1,0 +1,22 @@
+query IbisUserList($search: String $followedBy: String $followerOf: String $likeFor: String $rsvpFor: String $orderBy: String $first: Int $after: String) {
+    allIbisUsers(search: $search followedBy: $followedBy followerOf: $followerOf likeFor: $likeFor rsvpFor: $rsvpFor orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		name
+		username
+		avatar
+		person {
+		    id
+		}
+		nonprofit {
+		    id
+		}
+  	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}
