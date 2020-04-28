@@ -12,6 +12,9 @@ query Nonprofit($id: ID! $self: String){
 	donationFromCount
 	newsCount
 	eventCount
+	ibisuserPtr {
+	    id
+	}
 	isFollowing: follower(id: $self) {
 	    edges {
 		node {

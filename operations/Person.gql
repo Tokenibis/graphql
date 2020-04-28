@@ -13,6 +13,9 @@ query Person($id: ID! $self: String){
 	transactionFromCount
 	postCount
 	eventRsvpCount
+	ibisuserPtr {
+	    id
+	}
 	isFollowing: follower(id: $self) {
 	    edges {
 		node {
