@@ -8,7 +8,7 @@ query Settings($id: ID!) {
 	    emailFollow
 	    emailTransaction
 	    emailComment
-	    emailLike
+	    emailDeposit
 	}
     }
 }

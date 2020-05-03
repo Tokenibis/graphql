@@ -8,6 +8,7 @@ query DepositList($byUser: String $orderBy: String $first: Int $after: String) {
 		paymentId
 		category {
 		    id
+		    title
 		}
 	    }
 	    cursor
