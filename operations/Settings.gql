@@ -7,6 +7,7 @@ query Settings($id: ID!) {
 	notifier {
 	    id
 	    emailFollow
+	    emailDonation
 	    emailTransaction
 	    emailComment
 	    emailDeposit
