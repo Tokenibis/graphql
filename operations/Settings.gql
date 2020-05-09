@@ -1,6 +1,7 @@
 query Settings($id: ID!) {
     ibisUser(id: $id) {
 	username
+	email
 	visibilityDonation
 	visibilityTransaction
 	notifier {

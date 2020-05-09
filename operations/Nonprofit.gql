@@ -3,6 +3,7 @@ query Nonprofit($id: ID! $self: String){
 	id
 	name
 	username
+	followingCount
 	followerCount
 	description
 	link
