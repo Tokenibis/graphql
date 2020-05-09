@@ -1,4 +1,4 @@
-query Deposit($id: ID!) {
+query Balance($id: ID!) {
     ibisUser(id: $id) {
 	id
 	balance

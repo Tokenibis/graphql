@@ -1,0 +1,16 @@
+query WithdrawalList($byUser: String $orderBy: String $first: Int $after: String) {
+    allWithdrawals(byUser: $byUser orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		amount
+		created
+		description
+	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}
