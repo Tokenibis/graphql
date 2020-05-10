@@ -3,6 +3,7 @@ query News($id: ID! $self: String){
 	id
 	title
 	created
+	modified
 	description
 	image
 	likeCount

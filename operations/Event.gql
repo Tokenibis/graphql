@@ -4,6 +4,7 @@ query Event($id: ID! $self: String){
 	title
 	image
 	created
+	modified
 	description
 	date
 	duration
