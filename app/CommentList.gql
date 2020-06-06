@@ -1,4 +1,4 @@
-query CommentTree($hasParent: String! $self: String) {
+query CommentList($hasParent: String! $self: String) {
     allComments(hasParent: $hasParent orderBy: "-created") {
 	edges {
 	    node {
