@@ -1,0 +1,17 @@
+query IbisUser($id: ID!) {
+    ibisUser(id: $id) {
+	id
+	username
+	firstName
+	lastName
+	fullName: name
+	shortName
+	nonprofit {
+	    id
+	}
+	person {
+	    id
+	    isBot
+	}
+    }
+}

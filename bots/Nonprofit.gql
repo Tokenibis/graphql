@@ -1,0 +1,13 @@
+query Nonprofit($id: ID!) {
+    nonprofit(id: $id) {
+	id
+	username
+	firstName
+	lastName
+	fullName: name
+	shortName
+	ibisuserPtr {
+	    id
+	}
+    }
+}

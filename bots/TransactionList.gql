@@ -1,0 +1,34 @@
+query TransactionList($search: String $byUser: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allTransactions(search: $search byUser: $byUser orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		amount
+		description
+		created
+		likeCount
+		target {
+		    id
+		    person {
+			id
+			isBot
+		    }
+		}
+		user {
+		    id
+		    nonprofit {
+			id
+		    }
+		    person {
+			id
+			isBot
+		    }
+		}
+	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}

@@ -1,0 +1,20 @@
+query NewsList($search: String $byUser: String $orderBy: String = "-created" $first: Int =25 $after: String) {
+    allNews(search: $search byUser: $byUser orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		title
+		description
+		created
+		likeCount
+		user {
+		    id
+		}
+	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}

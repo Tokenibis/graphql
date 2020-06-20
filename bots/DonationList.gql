@@ -1,0 +1,30 @@
+query DonationList($search: String $byUser: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allDonations(search: $search byUser: $byUser orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		amount
+		description
+		created
+		likeCount
+		target {
+		    id
+		}
+		user {
+		    id
+		    nonprofit {
+			id
+		    }
+		    person {
+			id
+			isBot
+		    }
+		}
+	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}

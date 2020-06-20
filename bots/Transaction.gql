@@ -1,0 +1,26 @@
+query Transaction($id: ID!) {
+    transaction(id: $id) {
+	id
+	amount
+	description
+	created
+	likeCount
+	target {
+	    id
+	    person {
+		id
+		isBot
+	    }
+	}
+	user {
+	    id
+	    nonprofit {
+		id
+	    }
+	    person {
+		id
+		isBot
+	    }
+	}
+    }
+}
