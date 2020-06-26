@@ -1,4 +1,4 @@
-query IbisUserList($search: String $followedBy: String $followerOf: String $likeFor: String $rsvpFor: String $orderBy: String = "-date_joined" $first: Int =25 $after: String) {
+query IbisUserList($search: String $followedBy: String $followerOf: String $likeFor: String $rsvpFor: String $orderBy: String = "-date_joined" $first: Int = 25 $after: String) {
     allIbisUsers(search: $search followedBy: $followedBy followerOf: $followerOf likeFor: $likeFor rsvpFor: $rsvpFor orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
