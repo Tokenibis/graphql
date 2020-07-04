@@ -4,6 +4,7 @@ query Person($id: ID! $self: String){
 	name
 	username
 	avatar
+	description
 	donated
 	dateJoined
 	followerCount

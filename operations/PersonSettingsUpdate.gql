@@ -1,7 +1,0 @@
-mutation PersonSettingsUpdate($id: ID! $username: String $visibilityDonation: String $visibilityTransaction: String) {
-    updatePerson(id: $id username: $username visibilityDonation: $visibilityDonation visibilityTransaction: $visibilityTransaction) {
-	person {
-	    id
-	}
-    }
-}
