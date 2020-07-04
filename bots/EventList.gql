@@ -1,0 +1,23 @@
+query EventList($search: String $byUser: String $rsvpBy: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allEvents(search: $search byUser: $byUser rsvpBy: $rsvpBy orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		title
+		description
+		created
+		likeCount
+		date
+		duration
+		address
+		user {
+		    id
+		}
+	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}

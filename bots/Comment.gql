@@ -1,0 +1,20 @@
+query Comment($id: ID!) {
+    comment(id: $id) {
+  	node {
+	    id
+	    description
+	    created
+	    likeCount
+	    user {
+		id
+		nonprofit {
+		    id
+		}
+		person {
+		    id
+		    isBot
+		}
+	    }
+	}
+    }
+}

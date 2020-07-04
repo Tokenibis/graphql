@@ -1,0 +1,47 @@
+query CommentList($search: String $hasParent: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allComments(search: $search hasParent: $hasParent orderBy: $orderBy first: $first after: $after) {
+	edges {
+	    node {
+		id
+		description
+		created
+		likeCount
+		user {
+		    id
+		    person {
+			id
+			isBot
+		    }
+		    nonprofit {
+			id
+		    }
+		}
+		entryPtr {
+		    id
+		    commentCount
+		}
+		parent {
+		    id
+		    donation {
+			id
+		    }
+		    transaction {
+			id
+		    }
+		    news { 
+			id
+		    }
+		    event {
+			id
+		    }
+		    post {
+			id
+		    }
+		    comment {
+			id
+		    }
+		}
+	    }
+	}
+    }
+}

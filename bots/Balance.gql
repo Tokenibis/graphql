@@ -1,0 +1,6 @@
+query Balance($id: ID!) {
+    person (id: $id) {
+        id
+        balance
+    }
+}

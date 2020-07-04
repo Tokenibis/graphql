@@ -1,0 +1,24 @@
+query PostList($search: String $byUser: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allPosts(search: $search byUser: $byUser orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		title
+		description
+		created
+		likeCount
+		user {
+		    id
+		    person {
+			id
+			isBot
+		    }
+		}
+	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}

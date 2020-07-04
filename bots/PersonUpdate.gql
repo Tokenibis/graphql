@@ -1,0 +1,7 @@
+mutation PersonSettingsUpdate($id: ID! $description: String!) {
+    updatePerson(id: $id description: $description) {
+	person {
+	    id
+	}
+    }
+}

@@ -1,0 +1,7 @@
+mutation CommentCreate($user: ID! $parent: ID! $description: String!) {
+    createComment(user: $user parent: $parent description: $description) {
+	comment {
+	    id
+	}
+    }
+}

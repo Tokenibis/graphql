@@ -1,0 +1,22 @@
+query Donation($id: ID!) {
+    donation(id: $id) {
+	id
+	amount
+	description
+	created
+	likeCount
+	target {
+	    id
+	}
+	user {
+	    id
+	    nonprofit {
+		id
+	    }
+	    person {
+		id
+		isBot
+	    }
+	}
+    }
+}

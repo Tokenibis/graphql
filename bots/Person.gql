@@ -1,0 +1,14 @@
+query Person($id: ID!) {
+    person(id: $id) {
+	id
+	username
+	firstName
+	lastName
+	fullName: name
+	shortName
+	isBot
+	ibisuserPtr {
+	    id
+	}
+    }
+}

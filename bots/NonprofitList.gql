@@ -1,0 +1,21 @@
+query NonprofitList($search: String $followedBy: String $followerOf: String $likeFor: String $rsvpFor: String $orderBy: String = "-date_joined" $first: Int = 25 $after: String) {
+    allNonprofits(search: $search followedBy: $followedBy followerOf: $followerOf likeFor: $likeFor rsvpFor: $rsvpFor orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		username
+		firstName
+		lastName
+		fullName: name
+		shortName
+		ibisuserPtr {
+		    id
+		}
+  	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}
