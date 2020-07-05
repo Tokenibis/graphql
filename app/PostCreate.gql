@@ -1,5 +1,5 @@
-mutation PostCreate($user: ID! $title: String! $description: String!) {
-    createPost(user: $user title: $title description: $description) {
+mutation PostCreate($user: ID! $title: String! $description: String! $mention: [ID]) {
+    createPost(user: $user title: $title description: $description mention: $mention) {
 	post {
 	    id
 	}

@@ -1,5 +1,5 @@
-mutation TransactionCreate($user: ID! $target: ID! $amount: Int! $description: String!) {
-    createTransaction(user: $user target: $target amount: $amount description: $description) {
+mutation TransactionCreate($user: ID! $target: ID! $amount: Int! $description: String! $mention: [ID]) {
+    createTransaction(user: $user target: $target amount: $amount description: $description mention: $mention) {
 	transaction {
 	    id
 	}

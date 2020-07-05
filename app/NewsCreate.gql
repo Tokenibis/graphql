@@ -1,5 +1,5 @@
-mutation NewsCreate($user: ID! $title: String! $image: String! $description: String! $link: String) {
-    createNews(user: $user title: $title image: $image description: $description link: $link) {
+mutation NewsCreate($user: ID! $title: String! $image: String! $description: String! $link: String $mention: [ID]) {
+    createNews(user: $user title: $title image: $image description: $description link: $link mention: $mention) {
 	news {
 	    id
 	}
