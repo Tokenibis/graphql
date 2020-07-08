@@ -29,9 +29,12 @@ query TransactionList($self: String $search: String $byUser: String $byFollowing
 			}
 		    }
 		}
-		entryPtr {
-		    id
-		    commentCountRecursive
+		hasBookmarked: bookmark(id: $self) {
+		    edges {
+			node {
+			    id
+			}
+		    }
 		}
 	    }
 	    cursor

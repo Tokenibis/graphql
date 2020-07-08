@@ -46,9 +46,12 @@ query Donation($id: ID! $self: String){
 		}
 	    }
 	}
-	entryPtr {
-	    id
-	    commentCountRecursive
+	hasBookmarked: bookmark(id: $self) {
+	    edges {
+		node {
+		    id
+		}
+	    }
 	}
     }
 }
