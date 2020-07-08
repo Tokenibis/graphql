@@ -8,6 +8,20 @@ query News($id: ID! $self: String){
 	image
 	likeCount
 	link
+	mention {
+	    edges {
+		node {
+		    id
+		    username
+		    nonprofit {
+			id
+		    }
+		    person {
+			id
+		    }
+		}
+	    }
+	}
 	user {
 	    id
 	    name

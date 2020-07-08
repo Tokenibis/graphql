@@ -6,6 +6,20 @@ query CommentList($hasParent: String! $self: String) {
 		description
 		created
 		likeCount
+		mention {
+		    edges {
+			node {
+			    id
+			    username
+			    nonprofit {
+				id
+			    }
+			    person {
+				id
+			    }
+			}
+		    }
+		}
 		user {
 		    id
 		    name

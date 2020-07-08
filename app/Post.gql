@@ -5,6 +5,20 @@ query Post($id: ID! $self: String){
 	created
 	description
 	likeCount
+	mention {
+	    edges {
+		node {
+		    id
+		    username
+		    nonprofit {
+			id
+		    }
+		    person {
+			id
+		    }
+		}
+	    }
+	}
 	user {
 	    id
 	    name

@@ -5,6 +5,20 @@ query Donation($id: ID! $self: String){
 	amount
 	created
 	likeCount
+	mention {
+	    edges {
+		node {
+		    id
+		    username
+		    nonprofit {
+			id
+		    }
+		    person {
+			id
+		    }
+		}
+	    }
+	}
 	user {
 	    id
 	    username

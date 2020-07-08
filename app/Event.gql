@@ -12,6 +12,20 @@ query Event($id: ID! $self: String){
 	link
 	likeCount
 	rsvpCount
+	mention {
+	    edges {
+		node {
+		    id
+		    username
+		    nonprofit {
+			id
+		    }
+		    person {
+			id
+		    }
+		}
+	    }
+	}
 	user {
 	    id
 	    name
