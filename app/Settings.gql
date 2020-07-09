@@ -11,6 +11,7 @@ query Settings($id: ID!) {
 	    emailDonation
 	    emailTransaction
 	    emailComment
+	    emailMention
 	    emailDeposit
 	}
     }
