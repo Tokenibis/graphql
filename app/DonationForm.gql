@@ -8,4 +8,12 @@ query DonationForm($id: ID! $target: ID!) {
 	name
 	username
     }
+    message: allDonationMessages(nonprofit: $target random: true first: 1) {
+	edges {
+	    node {
+		id
+		description
+	    }
+	}
+    }
 }
