@@ -1,8 +1,9 @@
 query Donation($id: ID! $self: String){
     donation(id: $id) {
 	id
-	description 
 	amount
+	description 
+	private
 	created
 	likeCount
 	mention {

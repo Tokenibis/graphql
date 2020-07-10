@@ -1,8 +1,9 @@
 query Transaction($id: ID! $self: String){
     transaction(id: $id){
 	id
-	description 
 	amount
+	description 
+	private
 	created
 	likeCount
 	mention {

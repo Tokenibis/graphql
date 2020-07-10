@@ -3,8 +3,9 @@ query Settings($id: ID!) {
 	username
 	description
 	email
-	visibilityDonation
-	visibilityTransaction
+	privacyDonation
+	privacyTransaction
+	privacyDeposit
 	notifier {
 	    id
 	    emailFollow

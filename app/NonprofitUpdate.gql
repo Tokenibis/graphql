@@ -1,5 +1,5 @@
-mutation NonprofitUpdate($id: ID! $username: String $description: String $email: String $visibilityDonation: String $visibilityTransaction: String $avatar: Upload $banner: Upload) {
-    updateNonprofit(id: $id username: $username description: $description email: $email visibilityDonation: $visibilityDonation visibilityTransaction: $visibilityTransaction avatar: $avatar banner: $banner) {
+mutation NonprofitUpdate($id: ID! $username: String $description: String $privacyDonation: Boolean $privacyTransaction: Boolean $privacyDeposit: Boolean $avatar: Upload) {
+    updateNonprofit(id: $id username: $username description: $description privacyDonation: $privacyDonation privacyTransaction: $privacyTransaction privacyDeposit: $privacyDeposit avatar: $avatar) {
 	nonprofit {
 	    id
 	}

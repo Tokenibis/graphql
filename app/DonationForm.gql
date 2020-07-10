@@ -2,11 +2,13 @@ query DonationForm($id: ID! $target: ID!) {
     user: ibisUser(id: $id) {
 	id
 	balance
+	privacyDonation
     }
     target: nonprofit(id: $target) {
 	id
 	name
 	username
+	privacyDonation
     }
     message: allDonationMessages(nonprofit: $target random: true first: 1) {
 	edges {

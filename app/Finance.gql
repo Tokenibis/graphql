@@ -1,6 +1,7 @@
-query Balance($id: ID!) {
+query Finance($id: ID!) {
     ibisUser(id: $id) {
 	id
 	balance
+	privacyDeposit
     }
 }

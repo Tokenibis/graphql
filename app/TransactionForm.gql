@@ -2,10 +2,12 @@ query TransactionForm($id: ID! $target: ID!) {
     user: ibisUser(id: $id) {
 	id
 	balance
+	privacyTransaction
     }
     target: person(id: $target) {
 	id
 	name
 	username
+	privacyTransaction
     }
 }

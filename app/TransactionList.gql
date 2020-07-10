@@ -5,6 +5,7 @@ query TransactionList($self: String $search: String $byUser: String $byFollowing
 		id
 		amount
 		description
+		private
 		created
 		likeCount
 		target {
