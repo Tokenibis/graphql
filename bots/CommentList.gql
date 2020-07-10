@@ -18,7 +18,6 @@ query CommentList($search: String $hasParent: String $orderBy: String = "-create
 		}
 		entryPtr {
 		    id
-		    commentCount
 		}
 		parent {
 		    id
