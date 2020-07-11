@@ -1,5 +1,5 @@
-query DonationList($self: String $search: String $byUser: String $byFollowing: String $orderBy: String $first: Int! $after: String) {
-    allDonations(search: $search byUser: $byUser byFollowing: $byFollowing orderBy: $orderBy first: $first after: $after) {
+query DonationList($self: String $search: String $byUser: String $byFollowing: String $bookmarkBy: String $orderBy: String $first: Int! $after: String) {
+    allDonations(search: $search byUser: $byUser byFollowing: $byFollowing bookmarkBy: $bookmarkBy orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id
