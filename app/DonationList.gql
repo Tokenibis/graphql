@@ -1,4 +1,4 @@
-query DonationList($self: String $search: String $byUser: String $byFollowing: String $orderBy: String $first: Int $after: String) {
+query DonationList($self: String $search: String $byUser: String $byFollowing: String $orderBy: String $first: Int! $after: String) {
     allDonations(search: $search byUser: $byUser byFollowing: $byFollowing orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
