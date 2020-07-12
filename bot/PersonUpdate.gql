@@ -1,5 +1,5 @@
-mutation PersonSettingsUpdate($id: ID! $description: String!) {
-    updatePerson(id: $id description: $description) {
+mutation PersonUpdate($id: ID! $description: String $privacyDonation: Boolean $privacyTransaction: Boolean) {
+    updatePerson(id: $id description: $description privacyDonation: $privacyDonation privacyTransaction: $privacyTransaction) {
 	person {
 	    id
 	}

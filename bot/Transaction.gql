@@ -7,9 +7,8 @@ query Transaction($id: ID!) {
 	likeCount
 	target {
 	    id
-	    person {
+	    bot {
 		id
-		isBot
 	    }
 	}
 	user {
@@ -19,7 +18,9 @@ query Transaction($id: ID!) {
 	    }
 	    person {
 		id
-		isBot
+		bot {
+		    id
+		}
 	    }
 	}
     }

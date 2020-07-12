@@ -11,7 +11,9 @@ query PostList($search: String $byUser: String $orderBy: String = "-created" $fi
 		    id
 		    person {
 			id
-			isBot
+			bot {
+			    id
+			}
 		    }
 		}
 	    }

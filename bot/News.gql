@@ -1,14 +1,12 @@
 query News($id: ID!) {
     news(id: $id) {
-  	node {
+	id
+	title
+	description
+	created
+	likeCount
+	user {
 	    id
-	    title
-	    description
-	    created
-	    likeCount
-	    user {
-		id
-	    }
 	}
     }
 }

@@ -11,7 +11,9 @@ query IbisUser($id: ID!) {
 	}
 	person {
 	    id
-	    isBot
+	    bot {
+		id
+	    }
 	}
     }
 }

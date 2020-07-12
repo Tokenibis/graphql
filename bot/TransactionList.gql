@@ -9,10 +9,6 @@ query TransactionList($search: String $byUser: String $orderBy: String = "-creat
 		likeCount
 		target {
 		    id
-		    person {
-			id
-			isBot
-		    }
 		}
 		user {
 		    id
@@ -21,7 +17,9 @@ query TransactionList($search: String $byUser: String $orderBy: String = "-creat
 		    }
 		    person {
 			id
-			isBot
+			bot {
+			    id
+			}
 		    }
 		}
 	    }

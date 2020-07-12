@@ -6,11 +6,13 @@ query IbisUserList($search: String $followedBy: String $followerOf: String $like
 		username
 		firstName
 		lastName
-		fullName = name
+		fullName: name
 		shortName
 		person {
 		    id
-		    isBot
+		    bot {
+			id
+		    }
 		}
 		nonprofit {
 		    id

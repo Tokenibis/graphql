@@ -15,7 +15,9 @@ query Donation($id: ID!) {
 	    }
 	    person {
 		id
-		isBot
+		bot {
+		    id
+		}
 	    }
 	}
     }

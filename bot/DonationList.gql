@@ -17,7 +17,9 @@ query DonationList($search: String $byUser: String $orderBy: String = "-created"
 		    }
 		    person {
 			id
-			isBot
+			bot {
+			    id
+			}
 		    }
 		}
 	    }

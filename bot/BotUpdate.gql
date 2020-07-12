@@ -1,0 +1,7 @@
+mutation BotUpdate($id: ID! $tank: Int ) {
+    updateBot(id: $id tank: $tank) {
+	bot {
+	    id
+	}
+    }
+}

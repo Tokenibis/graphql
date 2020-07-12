@@ -8,7 +8,9 @@ query PersonList($search: String $followedBy: String $followerOf: String $likeFo
 		lastName
 		fullName: name
 		shortName
-		isBot
+		bot {
+		    id
+		}
 		ibisuserPtr {
 		    id
 		}

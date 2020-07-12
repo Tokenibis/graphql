@@ -6,7 +6,9 @@ query Person($id: ID!) {
 	lastName
 	fullName: name
 	shortName
-	isBot
+	bot {
+	    id
+	}
 	ibisuserPtr {
 	    id
 	}

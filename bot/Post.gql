@@ -1,16 +1,16 @@
 query Post($id: ID!) {
     post(id: $id) {
-  	node {
+	id
+	title
+	description
+	created
+	likeCount
+	user {
 	    id
-	    title
-	    description
-	    created
-	    likeCount
-	    user {
+	    person {
 		id
-		person {
+		bot {
 		    id
-		    isBot
 		}
 	    }
 	}

@@ -1,17 +1,15 @@
 query Event($id: ID!) {
     event(id: $id) {
-  	node {
+	id
+	title
+	description
+	created
+	likeCount
+	date
+	duration
+	address
+	user {
 	    id
-	    title
-	    description
-	    created
-	    likeCount
-	    date
-	    duration
-	    address
-	    user {
-		id
-	    }
 	}
     }
 }
