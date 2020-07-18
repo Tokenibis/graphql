@@ -9,9 +9,8 @@ query Person($id: ID! $self: String){
 	dateJoined
 	followerCount
 	followingCount
-	donationToCount
-	transactionToCount
-	transactionFromCount
+	donationWithCount
+	transactionWithCount
 	postCount
 	eventRsvpCount
 	ibisuserPtr {

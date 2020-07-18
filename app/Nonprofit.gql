@@ -10,7 +10,7 @@ query Nonprofit($id: ID! $self: String){
 	avatar
 	banner
 	fundraised
-	donationFromCount
+	donationWithCount
 	newsCount
 	eventCount
 	ibisuserPtr {
