@@ -1,5 +1,5 @@
-query NonprofitList($self: String $search: String $followedBy: String $orderBy: String $first: Int! $after: String) {
-    allNonprofits(search: $search followedBy: $followedBy orderBy: $orderBy first: $first after: $after) {
+query OrganizationList($self: String $search: String $followedBy: String $orderBy: String $first: Int! $after: String) {
+    allOrganizations(search: $search followedBy: $followedBy orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id

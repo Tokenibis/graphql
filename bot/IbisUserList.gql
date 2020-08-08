@@ -14,7 +14,7 @@ query IbisUserList($search: String $followedBy: String $followerOf: String $like
 			id
 		    }
 		}
-		nonprofit {
+		organization {
 		    id
 		}
   	    }

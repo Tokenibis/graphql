@@ -8,7 +8,7 @@ query SideMenu ($id: ID!) {
 	person {
 	    id
 	}
-	nonprofit {
+	organization {
 	    id
 	}
     }

@@ -19,7 +19,7 @@ query TransactionList($self: String $search: String $withUser: String $withFollo
 		    person {
 			id
 		    }
-		    nonprofit {
+		    organization {
 			id
 		    }
 		}

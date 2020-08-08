@@ -6,7 +6,7 @@ query IbisUser($id: ID!) {
 	lastName
 	fullName: name
 	shortName
-	nonprofit {
+	organization {
 	    id
 	}
 	person {

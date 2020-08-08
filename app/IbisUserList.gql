@@ -9,7 +9,7 @@ query IbisUserList($search: String $followedBy: String $followerOf: String $like
 		person {
 		    id
 		}
-		nonprofit {
+		organization {
 		    id
 		}
   	    }

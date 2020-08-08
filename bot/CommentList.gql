@@ -14,7 +14,7 @@ query CommentList($hasParent: String! $orderBy: String = "-created" $first: Int 
 			    id
 			}
 		    }
-		    nonprofit {
+		    organization {
 			id
 		    }
 		}

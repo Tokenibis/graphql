@@ -13,7 +13,7 @@ query NewsList($self: String $search: String $byUser: String $byFollowing: Strin
 		    name
 		    username
 		    avatar
-		    nonprofit {
+		    organization {
 			id
 			category {
 			    id

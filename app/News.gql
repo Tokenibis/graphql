@@ -13,7 +13,7 @@ query News($id: ID! $self: String){
 		node {
 		    id
 		    username
-		    nonprofit {
+		    organization {
 			id
 		    }
 		    person {
@@ -27,7 +27,7 @@ query News($id: ID! $self: String){
 	    name
 	    username
 	    avatar
-	    nonprofit {
+	    organization {
 		id
 		category {
 		    id

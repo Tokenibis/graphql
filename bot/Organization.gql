@@ -1,5 +1,5 @@
-query Nonprofit($id: ID!) {
-    nonprofit(id: $id) {
+query Organization($id: ID!) {
+    organization(id: $id) {
 	id
 	username
 	firstName

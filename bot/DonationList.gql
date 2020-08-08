@@ -12,7 +12,7 @@ query DonationList($search: String $byUser: String $orderBy: String = "-created"
 		}
 		user {
 		    id
-		    nonprofit {
+		    organization {
 			id
 		    }
 		    person {

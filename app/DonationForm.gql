@@ -4,13 +4,13 @@ query DonationForm($id: ID! $target: ID!) {
 	balance
 	privacyDonation
     }
-    target: nonprofit(id: $target) {
+    target: organization(id: $target) {
 	id
 	name
 	username
 	privacyDonation
     }
-    message: allDonationMessages(nonprofit: $target random: true first: 1) {
+    message: allDonationMessages(organization: $target random: true first: 1) {
 	edges {
 	    node {
 		id

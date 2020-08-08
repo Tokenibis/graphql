@@ -6,7 +6,7 @@ query Comment($id: ID!) {
 	likeCount
 	user {
 	    id
-	    nonprofit {
+	    organization {
 		id
 	    }
 	    person {

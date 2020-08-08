@@ -15,7 +15,7 @@ query EventList($self: String $search: String $byUser: String $byFollowing: Stri
 		    name
 		    username
 		    avatar
-		    nonprofit {
+		    organization {
 			id
 			category {
 			    id

@@ -10,7 +10,7 @@ query Donation($id: ID!) {
 	}
 	user {
 	    id
-	    nonprofit {
+	    organization {
 		id
 	    }
 	    person {

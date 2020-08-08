@@ -1,0 +1,7 @@
+mutation OrganizationUpdate($id: ID! $username: String $description: String $privacyDonation: Boolean $privacyTransaction: Boolean $privacyDeposit: Boolean $avatar: Upload $banner: Upload) {
+    updateOrganization(id: $id username: $username description: $description privacyDonation: $privacyDonation privacyTransaction: $privacyTransaction privacyDeposit: $privacyDeposit avatar: $avatar banner: $banner) {
+	organization {
+	    id
+	}
+    }
+}

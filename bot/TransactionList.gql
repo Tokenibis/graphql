@@ -12,7 +12,7 @@ query TransactionList($search: String $byUser: String $orderBy: String = "-creat
 		}
 		user {
 		    id
-		    nonprofit {
+		    organization {
 			id
 		    }
 		    person {

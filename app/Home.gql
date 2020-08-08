@@ -8,7 +8,7 @@ query Home($id: ID!) {
 	person {
 	    id
 	}
-	nonprofit {
+	organization {
 	    id
 	}
     }

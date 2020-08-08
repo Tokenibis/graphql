@@ -10,7 +10,7 @@ query Post($id: ID! $self: String){
 		node {
 		    id
 		    username
-		    nonprofit {
+		    organization {
 			id
 		    }
 		    person {
