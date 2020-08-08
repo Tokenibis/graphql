@@ -1,13 +1,11 @@
-query TransactionForm($id: ID! $target: ID!) {
+query RewardForm($id: ID! $target: ID!) {
     user: user(id: $id) {
 	id
 	balance
-	privacyTransaction
     }
     target: person(id: $target) {
 	id
 	name
 	username
-	privacyTransaction
     }
 }

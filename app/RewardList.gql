@@ -1,5 +1,5 @@
-query TransactionList($self: String $search: String $withUser: String $withFollowing: String $bookmarkBy: String $orderBy: String $first: Int! $after: String) {
-    allTransactions(search: $search withUser: $withUser withFollowing: $withFollowing bookmarkBy: $bookmarkBy orderBy: $orderBy first: $first after: $after) {
+query RewardList($self: String $search: String $withUser: String $withFollowing: String $bookmarkBy: String $orderBy: String $first: Int! $after: String) {
+    allRewards(search: $search withUser: $withUser withFollowing: $withFollowing bookmarkBy: $bookmarkBy orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id

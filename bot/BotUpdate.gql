@@ -1,5 +1,5 @@
-mutation BotUpdate($id: ID! $description: String $privacyDonation: Boolean $privacyTransaction: Boolean) {
-    updateBot(id: $id description: $description privacyDonation: $privacyDonation privacyTransaction: $privacyTransaction) {
+mutation BotUpdate($id: ID! $description: String) {
+    updateBot(id: $id description: $description) {
 	bot {
 	    id
 	}

@@ -1,5 +1,5 @@
-query Transaction($id: ID! $self: String){
-    transaction(id: $id){
+query Reward($id: ID! $self: String){
+    reward(id: $id){
 	id
 	amount
 	description 

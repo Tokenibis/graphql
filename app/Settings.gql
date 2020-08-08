@@ -3,14 +3,11 @@ query Settings($id: ID!) {
 	username
 	description
 	email
-	privacyDonation
-	privacyTransaction
-	privacyDeposit
 	notifier {
 	    id
 	    emailFollow
 	    emailDonation
-	    emailTransaction
+	    emailReward
 	    emailComment
 	    emailMention
 	    emailDeposit

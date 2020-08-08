@@ -2,13 +2,11 @@ query DonationForm($id: ID! $target: ID!) {
     user: user(id: $id) {
 	id
 	balance
-	privacyDonation
     }
     target: organization(id: $target) {
 	id
 	name
 	username
-	privacyDonation
     }
     message: allDonationMessages(organization: $target random: true first: 1) {
 	edges {
