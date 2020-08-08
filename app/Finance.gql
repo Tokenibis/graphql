@@ -1,5 +1,5 @@
 query Finance($id: ID!) {
-    ibisUser(id: $id) {
+    user(id: $id) {
 	id
 	balance
 	privacyDeposit

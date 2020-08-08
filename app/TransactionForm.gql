@@ -1,5 +1,5 @@
 query TransactionForm($id: ID! $target: ID!) {
-    user: ibisUser(id: $id) {
+    user: user(id: $id) {
 	id
 	balance
 	privacyTransaction

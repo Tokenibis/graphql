@@ -6,8 +6,5 @@ query Organization($id: ID!) {
 	lastName
 	fullName: name
 	shortName
-	ibisuserPtr {
-	    id
-	}
     }
 }

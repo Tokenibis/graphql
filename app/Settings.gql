@@ -1,5 +1,5 @@
 query Settings($id: ID!) {
-    ibisUser(id: $id) {
+    user(id: $id) {
 	username
 	description
 	email

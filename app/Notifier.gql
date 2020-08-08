@@ -1,5 +1,5 @@
 query Notifier($id: ID!) {
-    ibisUser(id: $id) {
+    user(id: $id) {
 	id
 	notifier {
 	    id

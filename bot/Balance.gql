@@ -1,5 +1,5 @@
 query Balance($id: ID!) {
-    ibisUser(id: $id) {
+    user(id: $id) {
         id
         balance
     }

@@ -1,5 +1,5 @@
 query Home($id: ID!) {
-    ibisUser(id: $id) {
+    user(id: $id) {
 	id
 	avatar
 	username
