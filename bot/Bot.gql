@@ -1,5 +1,5 @@
-query Person($id: ID!) {
-    person(id: $id) {
+query Bot($id: ID!) {
+    bot(id: $id) {
 	id
 	username
 	firstName

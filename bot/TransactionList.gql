@@ -15,11 +15,8 @@ query TransactionList($search: String $byUser: String $orderBy: String = "-creat
 		    organization {
 			id
 		    }
-		    person {
+		    bot {
 			id
-			bot {
-			    id
-			}
 		    }
 		}
 	    }

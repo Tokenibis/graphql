@@ -8,12 +8,6 @@ query PersonList($search: String $followedBy: String $followerOf: String $likeFo
 		lastName
 		fullName: name
 		shortName
-		bot {
-		    id
-		}
-		ibisuserPtr {
-		    id
-		}
   	    }
 	    cursor
 	}

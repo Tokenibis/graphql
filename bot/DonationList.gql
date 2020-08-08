@@ -15,11 +15,8 @@ query DonationList($search: String $byUser: String $orderBy: String = "-created"
 		    organization {
 			id
 		    }
-		    person {
+		    bot {
 			id
-			bot {
-			    id
-			}
 		    }
 		}
 	    }

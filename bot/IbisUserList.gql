@@ -8,11 +8,8 @@ query IbisUserList($search: String $followedBy: String $followerOf: String $like
 		lastName
 		fullName: name
 		shortName
-		person {
+		bot {
 		    id
-		    bot {
-			id
-		    }
 		}
 		organization {
 		    id

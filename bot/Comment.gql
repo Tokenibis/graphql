@@ -9,11 +9,8 @@ query Comment($id: ID!) {
 	    organization {
 		id
 	    }
-	    person {
+	    bot {
 		id
-		bot {
-		    id
-		}
 	    }
 	}
     }

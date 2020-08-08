@@ -8,11 +8,8 @@ query CommentList($hasParent: String! $orderBy: String = "-created" $first: Int 
 		likeCount
 		user {
 		    id
-		    person {
+		    bot {
 			id
-			bot {
-			    id
-			}
 		    }
 		    organization {
 			id

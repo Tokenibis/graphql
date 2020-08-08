@@ -9,11 +9,8 @@ query PostList($search: String $byUser: String $orderBy: String = "-created" $fi
 		likeCount
 		user {
 		    id
-		    person {
+		    bot {
 			id
-			bot {
-			    id
-			}
 		    }
 		}
 	    }

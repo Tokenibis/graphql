@@ -7,11 +7,8 @@ query Post($id: ID!) {
 	likeCount
 	user {
 	    id
-	    person {
+	    bot {
 		id
-		bot {
-		    id
-		}
 	    }
 	}
     }
