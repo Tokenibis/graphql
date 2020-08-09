@@ -11,12 +11,6 @@ query Reward($id: ID! $self: String){
 		node {
 		    id
 		    username
-		    organization {
-			id
-		    }
-		    person {
-			id
-		    }
 		}
 	    }
 	}
@@ -25,12 +19,6 @@ query Reward($id: ID! $self: String){
 	    username
 	    name
 	    avatar
-	    person {
-		id
-	    }
-	    organization {
-		id
-	    }
 	}
 	target {
 	    id

@@ -10,9 +10,9 @@ query Organization($id: ID! $self: String){
 	avatar
 	banner
 	fundraised
-	donationWithCount
 	newsCount
 	eventCount
+	donationReceivedCount
 	isFollowing: follower(id: $self) {
 	    edges {
 		node {

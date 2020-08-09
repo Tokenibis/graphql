@@ -8,20 +8,14 @@ query RewardList($self: String $search: String $withUser: String $withFollowing:
 		private
 		created
 		likeCount
-		target {
-		    id
-		    name
-		}
 		user {
 		    id
 		    name
 		    avatar
-		    person {
-			id
-		    }
-		    organization {
-			id
-		    }
+		}
+		target {
+		    id
+		    name
 		}
 		hasLiked: like(id: $self) {
 		    edges {

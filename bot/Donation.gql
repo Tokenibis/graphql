@@ -5,17 +5,11 @@ query Donation($id: ID!) {
 	description
 	created
 	likeCount
-	target {
-	    id
-	}
 	user {
 	    id
-	    organization {
-		id
-	    }
-	    bot {
-		id
-	    }
+	}
+	target {
+	    id
 	}
     }
 }

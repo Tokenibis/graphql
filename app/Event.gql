@@ -17,12 +17,6 @@ query Event($id: ID! $self: String){
 		node {
 		    id
 		    username
-		    organization {
-			id
-		    }
-		    person {
-			id
-		    }
 		}
 	    }
 	}
@@ -31,11 +25,8 @@ query Event($id: ID! $self: String){
 	    name
 	    username
 	    avatar
-	    organization {
+	    category {
 		id
-		category {
-		    id
-		}
 	    }
 	}
 	hasLiked: like(id: $self) {

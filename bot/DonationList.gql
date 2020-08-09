@@ -7,17 +7,11 @@ query DonationList($search: String $byUser: String $orderBy: String = "-created"
 		description
 		created
 		likeCount
-		target {
-		    id
-		}
 		user {
 		    id
-		    organization {
-			id
-		    }
-		    bot {
-			id
-		    }
+		}
+		target {
+		    id
 		}
 	    }
 	    cursor

@@ -8,21 +8,15 @@ query DonationList($self: String $search: String $withUser: String $withFollowin
 		private
 		created
 		likeCount
-		target {
-		    id
-		    name
-		    category {
-			id
-		    }
-		}
 		user {
 		    id
 		    name
 		    avatar
-		    person {
-			id
-		    }
-		    organization {
+		}
+		target {
+		    id
+		    name
+		    category {
 			id
 		    }
 		}

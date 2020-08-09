@@ -9,10 +9,10 @@ query Person($id: ID! $self: String){
 	dateJoined
 	followerCount
 	followingCount
-	donationWithCount
-	rewardWithCount
+	donationCount
 	postCount
 	eventRsvpCount
+	rewardReceivedCount
 	isFollowing: follower(id: $self) {
 	    edges {
 		node {

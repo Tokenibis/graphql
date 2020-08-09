@@ -5,20 +5,11 @@ query Reward($id: ID!) {
 	description
 	created
 	likeCount
-	target {
-	    id
-	    bot {
-		id
-	    }
-	}
 	user {
 	    id
-	    organization {
-		id
-	    }
-	    bot {
-		id
-	    }
+	}
+	target {
+	    id
 	}
     }
 }

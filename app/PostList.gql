@@ -12,9 +12,6 @@ query PostList($self: String $search: String $byUser: String $byFollowing: Strin
 		    name
 		    username
 		    avatar
-		    person {
-			id
-		    }
 		}
 		hasLiked: like(id: $self) {
 		    edges {

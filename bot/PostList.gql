@@ -9,9 +9,6 @@ query PostList($search: String $byUser: String $orderBy: String = "-created" $fi
 		likeCount
 		user {
 		    id
-		    bot {
-			id
-		    }
 		}
 	    }
 	    cursor

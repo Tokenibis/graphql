@@ -5,7 +5,7 @@ query DepositList($byUser: String $orderBy: String $first: Int! $after: String) 
 		id
 		amount
 		created
-		paymentId
+		description
 		category {
 		    id
 		    title

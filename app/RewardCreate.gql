@@ -1,5 +1,5 @@
-mutation RewardCreate($user: ID! $target: ID! $amount: Int! $description: String! $private: Boolean) {
-    createReward(user: $user target: $target amount: $amount description: $description private: $private) {
+mutation RewardCreate($user: ID! $target: ID! $amount: Int! $description: String!) {
+    createReward(user: $user target: $target amount: $amount description: $description) {
 	reward {
 	    id
 	}
