@@ -1,0 +1,37 @@
+query Challenge($id: ID! $self: String){
+    challenge(id: $id){
+	id
+	title
+	created
+	description
+	likeCount
+	mention {
+	    edges {
+		node {
+		    id
+		    username
+		}
+	    }
+	}
+	user {
+	    id
+	    name
+	    username
+	    avatar
+	}
+	hasLiked: like(id: $self) {
+	    edges {
+		node {
+		    id
+		}
+	    }
+	}
+	hasBookmarked: bookmark(id: $self) {
+	    edges {
+		node {
+		    id
+		}
+	    }
+	}
+    }
+}

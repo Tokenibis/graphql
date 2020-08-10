@@ -1,0 +1,15 @@
+query Challenge($id: ID! $self: String){
+    challenge(id: $id){
+	id
+	title
+	description
+	created
+	likeCount
+	active
+	rewardMin
+	rewardRange
+	user {
+	    id
+	}
+    }
+}
