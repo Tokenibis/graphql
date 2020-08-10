@@ -4,8 +4,7 @@ query User($id: ID!) {
 	username
 	firstName
 	lastName
-	fullName: name
-	shortName
+	name
 	organization {
 	    id
 	}
