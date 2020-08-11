@@ -5,11 +5,5 @@ query Home($id: ID!) {
 	username
 	name
 	balance
-	person {
-	    id
-	}
-	organization {
-	    id
-	}
     }
 }

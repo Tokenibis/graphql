@@ -9,12 +9,7 @@ mutation CommentCreate($user: ID! $parent: ID! $description: String! $self: Stri
 		name
 		username
 		avatar
-		person {
-		    id
-		}
-		organization {
-		    id
-		}
+		userType
 	    }
 	    hasLiked: like(id: $self) {
 		edges {
@@ -22,10 +17,6 @@ mutation CommentCreate($user: ID! $parent: ID! $description: String! $self: Stri
 			id
 		    }
 		}
-	    }
-	    entryPtr {
-		id
-		commentCount
 	    }
 	}
     }

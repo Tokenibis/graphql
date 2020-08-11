@@ -3,7 +3,6 @@ query Bot($id: ID!) {
 	id
 	username
 	firstName
-	lastName
 	name
     }
 }

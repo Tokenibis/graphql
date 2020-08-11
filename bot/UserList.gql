@@ -5,14 +5,8 @@ query UserList($search: String $followedBy: String $followerOf: String $likeFor:
 		id
 		username
 		firstName
-		lastName
 		name
-		bot {
-		    id
-		}
-		organization {
-		    id
-		}
+		userType
   	    }
 	    cursor
 	}

@@ -6,38 +6,10 @@ query CommentList($hasParent: String! $orderBy: String = "-created" $first: Int 
 		description
 		created
 		likeCount
+		entryType
 		user {
 		    id
-		    bot {
-			id
-		    }
-		    organization {
-			id
-		    }
-		}
-		entryPtr {
-		    id
-		}
-		parent {
-		    id
-		    donation {
-			id
-		    }
-		    reward {
-			id
-		    }
-		    news { 
-			id
-		    }
-		    event {
-			id
-		    }
-		    post {
-			id
-		    }
-		    comment {
-			id
-		    }
+		    userType
 		}
 	    }
 	}

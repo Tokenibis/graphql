@@ -3,7 +3,6 @@ query Person($id: ID!) {
 	id
 	username
 	firstName
-	lastName
 	name
     }
 }

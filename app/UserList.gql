@@ -6,12 +6,7 @@ query UserList($search: String $followedBy: String $followerOf: String $likeFor:
 		name
 		username
 		avatar
-		person {
-		    id
-		}
-		organization {
-		    id
-		}
+		userType
   	    }
 	    cursor
 	}

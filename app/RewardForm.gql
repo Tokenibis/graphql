@@ -1,9 +1,9 @@
 query RewardForm($id: ID! $target: ID!) {
-    bot(id: $id) {
+    user: bot(id: $id) {
 	id
 	balance
     }
-    person(id: $target) {
+    target: person(id: $target) {
 	id
 	name
 	username

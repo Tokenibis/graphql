@@ -5,11 +5,6 @@ query SideMenu ($id: ID!) {
 	username
 	name
 	balance
-	person {
-	    id
-	}
-	organization {
-	    id
-	}
+	userType
     }
 }

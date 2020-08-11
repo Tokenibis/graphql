@@ -11,12 +11,7 @@ query CommentList($hasParent: String! $self: String) {
 			node {
 			    id
 			    username
-			    organization {
-				id
-			    }
-			    person {
-				id
-			    }
+			    userType
 			}
 		    }
 		}
@@ -25,12 +20,7 @@ query CommentList($hasParent: String! $self: String) {
 		    name
 		    username
 		    avatar
-		    person {
-			id
-		    }
-		    organization {
-			id
-		    }
+		    userType
 		}
 		hasLiked: like(id: $self) {
 		    edges {
@@ -38,10 +28,6 @@ query CommentList($hasParent: String! $self: String) {
 			    id
 			}
 		    }
-		}
-		entryPtr {
-		    id
-		    commentCount
 		}
 	    }
 	}

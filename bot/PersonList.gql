@@ -5,7 +5,6 @@ query PersonList($search: String $followedBy: String $followerOf: String $likeFo
 		id
 		username
 		firstName
-		lastName
 		name
   	    }
 	    cursor

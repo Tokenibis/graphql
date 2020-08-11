@@ -6,12 +6,7 @@ query Comment($id: ID!) {
 	likeCount
 	user {
 	    id
-	    organization {
-		id
-	    }
-	    bot {
-		id
-	    }
+	    userType
 	}
     }
 }

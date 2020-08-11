@@ -3,13 +3,7 @@ query User($id: ID!) {
 	id
 	username
 	firstName
-	lastName
 	name
-	organization {
-	    id
-	}
-	bot {
-	    id
-	}
+	userType
     }
 }
