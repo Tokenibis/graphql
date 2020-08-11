@@ -1,6 +1,6 @@
-mutation ChallengeUpdate($id: ID! $user: ID $title: String $description: String $active: Boolean $rewardMin: Int $rewardRange: Int) {
-    updateChallenge(id: $id user: $user title: $title description: $description active: $active rewardMin: $rewardMin rewardRange: $rewardRange) {
-	challenge {
+mutation ActivityUpdate($id: ID! $user: ID $title: String $description: String $active: Boolean $rewardMin: Int $rewardRange: Int) {
+    updateActivity(id: $id user: $user title: $title description: $description active: $active rewardMin: $rewardMin rewardRange: $rewardRange) {
+	activity {
 	    id
 	}
     }

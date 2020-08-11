@@ -1,4 +1,4 @@
-query PersonList($self: String $search: String $followedBy: String $followerOf: String $likeFor: String $rsvpFor: String $orderBy: String $first: Int! $after: String) {
+query BotList($self: String $search: String $followedBy: String $followerOf: String $likeFor: String $rsvpFor: String $orderBy: String $first: Int! $after: String) {
     allPeople(search: $search followedBy: $followedBy followerOf: $followerOf likeFor: $likeFor rsvpFor: $rsvpFor orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
@@ -7,6 +7,9 @@ query PersonList($self: String $search: String $followedBy: String $followerOf: 
 		username
 		avatar
 		description
+		followerCount
+		followingCount
+		dateJoined
 		isFollowing: follower(id: $self) {
 		    edges {
 			node {

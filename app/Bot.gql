@@ -1,0 +1,20 @@
+query Bot($id: ID! $self: String){
+    bot(id: $id) {
+	id
+	name
+	username
+	avatar
+	description
+	dateJoined
+	followerCount
+	followingCount
+	eventRsvpCount
+	isFollowing: follower(id: $self) {
+	    edges {
+		node {
+		    id
+		}
+	    }
+	}
+    }
+}

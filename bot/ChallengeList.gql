@@ -1,5 +1,5 @@
-query ChallengeList($self: String $search: String $byUser: String $byFollowing: String $bookmarkBy: String $orderBy: String $first: Int! $after: String) {
-    allChallenges(search: $search byUser: $byUser byFollowing: $byFollowing bookmarkBy: $bookmarkBy orderBy: $orderBy first: $first after: $after) {
+query ActivityList($self: String $search: String $byUser: String $byFollowing: String $bookmarkBy: String $orderBy: String $first: Int! $after: String) {
+    allActivities(search: $search byUser: $byUser byFollowing: $byFollowing bookmarkBy: $bookmarkBy orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		title

@@ -1,5 +1,5 @@
-query Challenge($id: ID! $self: String){
-    challenge(id: $id){
+query Activity($id: ID! $self: String){
+    activity(id: $id){
 	id
 	title
 	description
