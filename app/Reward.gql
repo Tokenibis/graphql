@@ -26,6 +26,9 @@ query Reward($id: ID! $self: String){
 	    username
 	    name
 	}
+	relatedActivity {
+	    id
+	}
 	hasLiked: like(id: $self) {
 	    edges {
 		node {

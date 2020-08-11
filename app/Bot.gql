@@ -6,6 +6,7 @@ query Bot($id: ID! $self: String){
 	avatar
 	description
 	dateJoined
+	rewarded
 	followerCount
 	followingCount
 	eventRsvpCount

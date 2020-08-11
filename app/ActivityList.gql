@@ -7,6 +7,9 @@ query ActivityList($self: String $search: String $byUser: String $byFollowing: S
 		created
 		description
 		likeCount
+		active
+		rewardMin
+		rewardRange
 		user {
 		    id
 		    name

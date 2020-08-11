@@ -3,8 +3,12 @@ query Activity($id: ID! $self: String){
 	id
 	title
 	created
+	modified
 	description
 	likeCount
+	active
+	rewardMin
+	rewardRange
 	mention {
 	    edges {
 		node {
