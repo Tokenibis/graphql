@@ -13,6 +13,7 @@ query News($id: ID! $self: String){
 		node {
 		    id
 		    username
+		    userType
 		}
 	    }
 	}

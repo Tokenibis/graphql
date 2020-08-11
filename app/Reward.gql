@@ -11,6 +11,7 @@ query Reward($id: ID! $self: String){
 		node {
 		    id
 		    username
+		    userType
 		}
 	    }
 	}

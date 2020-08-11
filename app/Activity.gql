@@ -10,6 +10,7 @@ query Activity($id: ID! $self: String){
 		node {
 		    id
 		    username
+		    userType
 		}
 	    }
 	}
