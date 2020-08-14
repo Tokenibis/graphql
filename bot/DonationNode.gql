@@ -1,4 +1,4 @@
-query Donation($id: ID!) {
+query DonationNode($id: ID!) {
     donation(id: $id) {
 	id
 	amount

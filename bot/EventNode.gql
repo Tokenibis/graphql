@@ -1,4 +1,4 @@
-query Event($id: ID!) {
+query EventNode($id: ID!) {
     event(id: $id) {
 	id
 	title

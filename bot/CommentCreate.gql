@@ -1,5 +1,5 @@
-mutation CommentCreate($user: ID! $parent: ID! $description: String!) {
-    createComment(user: $user parent: $parent description: $description) {
+mutation CommentCreate($user: ID! $parent: ID! $description: String! $scratch: String) {
+    createComment(user: $user parent: $parent description: $description scratch: $scratch) {
 	comment {
 	    id
 	}

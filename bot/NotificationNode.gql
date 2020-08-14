@@ -1,4 +1,4 @@
-query Notification(id: ID!) {
+query NotificationNode($id: ID!) {
     notification(id: $id) {
 	id
 	category

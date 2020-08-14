@@ -1,5 +1,5 @@
-query RewardList($search: String $user: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
-    allRewards(search: $search user: $user orderBy: $orderBy first: $first after: $after) {
+query RewardList($search: String $user: String $scratch: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allRewards(search: $search user: $user scratch: $scratch orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id

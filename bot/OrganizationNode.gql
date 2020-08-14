@@ -1,4 +1,4 @@
-query Organization($id: ID!) {
+query OrganizationNode($id: ID!) {
     organization(id: $id) {
 	id
 	username

@@ -1,4 +1,4 @@
-query Person($id: ID!) {
+query PersonNode($id: ID!) {
     person(id: $id) {
 	id
 	username

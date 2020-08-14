@@ -1,4 +1,4 @@
-query Reward($id: ID!) {
+query RewardNode($id: ID!) {
     reward(id: $id) {
 	id
 	amount

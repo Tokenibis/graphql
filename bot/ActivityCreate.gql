@@ -1,5 +1,5 @@
-mutation ActivityCreate($user: ID! $title: String! $description: String! $active: Boolean! $rewardMin: Int $rewardRange: Int) {
-    createActivity(user: $user title: $title description: $description active: $active rewardMin: $rewardMin rewardRange: $rewardRange) {
+mutation ActivityCreate($user: ID! $title: String! $description: String! $active: Boolean! $rewardMin: Int $rewardRange: Int $scratch: String) {
+    createActivity(user: $user title: $title description: $description active: $active rewardMin: $rewardMin rewardRange: $rewardRange scratch: $scratch) {
 	activity {
 	    id
 	}

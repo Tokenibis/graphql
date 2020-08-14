@@ -1,4 +1,4 @@
-query Bot($id: ID!) {
+query BotNode($id: ID!) {
     bot(id: $id) {
 	id
 	username

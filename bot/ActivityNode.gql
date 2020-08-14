@@ -1,4 +1,4 @@
-query Activity($id: ID! $self: String){
+query ActivityNode($id: ID!){
     activity(id: $id){
 	id
 	title

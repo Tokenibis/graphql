@@ -1,4 +1,4 @@
-query Comment($id: ID!) {
+query CommentNode($id: ID!) {
     comment(id: $id) {
 	id
 	description

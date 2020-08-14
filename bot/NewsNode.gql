@@ -1,4 +1,4 @@
-query News($id: ID!) {
+query NewsNode($id: ID!) {
     news(id: $id) {
 	id
 	title
