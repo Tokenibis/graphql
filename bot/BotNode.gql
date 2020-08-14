@@ -2,7 +2,6 @@ query Bot($id: ID!) {
     bot(id: $id) {
 	id
 	username
-	firstName
 	name
     }
 }

@@ -1,0 +1,9 @@
+query Notification(id: ID!) {
+    notification(id: $id) {
+	id
+	category
+	clicked
+	reference
+	created
+    }
+}

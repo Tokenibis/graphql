@@ -1,6 +1,0 @@
-query Balance($id: ID!) {
-    user(id: $id) {
-        id
-        balance
-    }
-}

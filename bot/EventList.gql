@@ -1,5 +1,5 @@
-query EventList($search: String $byUser: String $rsvpBy: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
-    allEvents(search: $search byUser: $byUser rsvpBy: $rsvpBy orderBy: $orderBy first: $first after: $after) {
+query EventList($search: String $user: String $rsvpBy: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allEvents(search: $search user: $user rsvpBy: $rsvpBy orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id

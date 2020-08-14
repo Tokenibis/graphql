@@ -1,5 +1,5 @@
-query WithdrawalList($byUser: String $orderBy: String $first: Int! $after: String) {
-    allWithdrawals(byUser: $byUser orderBy: $orderBy first: $first after: $after) {
+query WithdrawalList($user: String $orderBy: String $first: Int! $after: String) {
+    allWithdrawals(user: $user orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id

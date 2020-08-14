@@ -1,5 +1,5 @@
-query PostList($search: String $byUser: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
-    allPosts(search: $search byUser: $byUser orderBy: $orderBy first: $first after: $after) {
+query PostList($search: String $user: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allPosts(search: $search user: $user orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id

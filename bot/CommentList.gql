@@ -1,5 +1,5 @@
-query CommentList($hasParent: String! $orderBy: String = "-created" $first: Int = 25 $after: String) {
-    allComments(hasParent: $hasParent orderBy: $orderBy first: $first after: $after) {
+query CommentList($parent: String! $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allComments(parent: $parent orderBy: $orderBy first: $first after: $after) {
 	edges {
 	    node {
 		id

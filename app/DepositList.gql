@@ -1,5 +1,5 @@
-query DepositList($byUser: String $orderBy: String $first: Int! $after: String) {
-    allDeposits(byUser: $byUser orderBy: $orderBy first: $first after: $after) {
+query DepositList($user: String $orderBy: String $first: Int! $after: String) {
+    allDeposits(user: $user orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id
