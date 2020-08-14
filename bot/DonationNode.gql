@@ -7,9 +7,15 @@ query DonationNode($id: ID!) {
 	likeCount
 	user {
 	    id
+	    username
+	    name
+	    firstName
 	}
 	target {
 	    id
+	    username
+	    name
+	    firstName
 	}
     }
 }

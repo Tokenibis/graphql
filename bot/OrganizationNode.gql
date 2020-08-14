@@ -2,7 +2,7 @@ query OrganizationNode($id: ID!) {
     organization(id: $id) {
 	id
 	username
-	firstName
 	name
+	firstName
     }
 }

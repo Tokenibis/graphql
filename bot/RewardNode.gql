@@ -5,11 +5,18 @@ query RewardNode($id: ID!) {
 	description
 	created
 	likeCount
+	scratch
 	user {
 	    id
+	    username
+	    name
+	    firstName
 	}
 	target {
 	    id
+	    username
+	    name
+	    firstName
 	}
     }
 }

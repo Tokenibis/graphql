@@ -7,11 +7,18 @@ query RewardList($search: String $user: String $scratch: String $orderBy: String
 		description
 		created
 		likeCount
+		scratch
 		user {
 		    id
+		    username
+		    name
+		    firstName
 		}
 		target {
 		    id
+		    username
+		    name
+		    firstName
 		}
 	    }
 	    cursor

@@ -4,8 +4,8 @@ query PersonList($search: String $followedBy: String $followerOf: String $likeFo
   	    node {
 		id
 		username
-		firstName
 		name
+		firstName
   	    }
 	    cursor
 	}

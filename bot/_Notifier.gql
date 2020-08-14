@@ -1,0 +1,6 @@
+query _Notifier($id: ID!) {
+    notifier(id: $id) {
+        id
+        unseenCount
+    }
+}

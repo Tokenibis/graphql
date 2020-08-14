@@ -7,6 +7,9 @@ query NewsNode($id: ID!) {
 	likeCount
 	user {
 	    id
+	    username
+	    name
+	    firstName
 	}
     }
 }

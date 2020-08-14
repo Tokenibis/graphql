@@ -3,5 +3,6 @@ query BotNode($id: ID!) {
 	id
 	username
 	name
+	firstName
     }
 }

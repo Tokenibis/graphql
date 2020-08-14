@@ -2,6 +2,9 @@ mutation BotUpdate($id: ID! $description: String) {
     updateBot(id: $id description: $description) {
 	bot {
 	    id
+	    username
+	    name
+	    firstName
 	}
     }
 }

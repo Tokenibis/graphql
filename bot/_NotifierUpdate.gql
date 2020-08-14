@@ -1,0 +1,7 @@
+mutation _NotifierUpdate($id: ID! $lastSeen: String!) {
+    updateNotifier(id: $id lastSeen: $lastSeen) {
+        notifier {
+            id
+        }
+    }
+}

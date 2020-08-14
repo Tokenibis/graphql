@@ -10,8 +10,12 @@ query ActivityList($search: String $user: String $byFollowing: String $bookmarkB
 		active
 		rewardMin
 		rewardRange
+		scratch
 		user {
 		    id
+		    username
+		    name
+		    firstName
 		}
 	    }
 	    cursor

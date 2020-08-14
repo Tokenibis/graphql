@@ -9,6 +9,9 @@ query NewsList($search: String $user: String $orderBy: String = "-created" $firs
 		likeCount
 		user {
 		    id
+		    username
+		    name
+		    firstName
 		}
 	    }
 	    cursor

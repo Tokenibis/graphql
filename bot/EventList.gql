@@ -12,6 +12,9 @@ query EventList($search: String $user: String $rsvpBy: String $orderBy: String =
 		address
 		user {
 		    id
+		    username
+		    name
+		    firstName
 		}
 	    }
 	    cursor

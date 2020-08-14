@@ -4,8 +4,8 @@ query OrganizationList($search: String $followedBy: String $followerOf: String $
   	    node {
 		id
 		username
-		firstName
 		name
+		firstName
   	    }
 	    cursor
 	}

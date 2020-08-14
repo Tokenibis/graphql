@@ -2,6 +2,20 @@ mutation ActivityUpdate($id: ID! $user: ID $title: String $description: String $
     updateActivity(id: $id user: $user title: $title description: $description active: $active rewardMin: $rewardMin rewardRange: $rewardRange scratch: $scratch) {
 	activity {
 	    id
+	    title
+	    description
+	    created
+	    likeCount
+	    active
+	    rewardMin
+	    rewardRange
+	    scratch
+	    user {
+		id
+		username
+		name
+		firstName
+	    }
 	}
     }
 }

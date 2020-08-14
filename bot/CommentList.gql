@@ -10,6 +10,20 @@ query CommentList($parent: String! $scratch: String $orderBy: String = "-created
 		user {
 		    id
 		    userType
+		    username
+		    name
+		    firstName
+		}
+		mention {
+		    edges {
+			node {
+			    id
+			    userType
+			    username
+			    name
+			    firstName
+			}
+		    }
 		}
 	    }
 	}

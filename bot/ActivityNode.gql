@@ -8,8 +8,12 @@ query ActivityNode($id: ID!){
 	active
 	rewardMin
 	rewardRange
+	scratch
 	user {
 	    id
+	    username
+	    name
+	    firstName
 	}
     }
 }

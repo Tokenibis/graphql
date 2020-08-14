@@ -7,6 +7,20 @@ query CommentNode($id: ID!) {
 	user {
 	    id
 	    userType
+	    username
+	    name
+	    firstName
+	}
+	mention {
+	    edges {
+		node {
+		    id
+		    userType
+		    username
+		    name
+		    firstName
+		}
+	    }
 	}
     }
 }

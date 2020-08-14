@@ -2,6 +2,25 @@ mutation CommentCreate($user: ID! $parent: ID! $description: String! $scratch: S
     createComment(user: $user parent: $parent description: $description scratch: $scratch) {
 	comment {
 	    id
+	    description
+	    created
+	    likeCount
+	    user {
+		id
+		userType
+		username
+		name
+		firstName
+	    }
+	    mention {
+		edges {
+		    node {
+			id
+			username
+			userType
+		    }
+		}
+	    }
 	}
     }
 }

@@ -1,7 +1,24 @@
-mutation RewardCreate($user: ID! $target: ID! $amount: Int! $description: String! $scratch: String) {
-    createReward(user: $user target: $target amount: $amount description: $description scratch: $scratch) {
+mutation RewardCreate($user: ID! $target: ID! $amount: Int! $description: String! $relatedActivity: ID $scratch: String) {
+    createReward(user: $user target: $target amount: $amount description: $description relatedActivity: $relatedActivity scratch: $scratch) {
 	reward {
 	    id
+	    amount
+	    description
+	    created
+	    likeCount
+	    scratch
+	    user {
+		id
+		username
+		name
+		firstName
+	    }
+	    target {
+		id
+		username
+		name
+		firstName
+	    }
 	}
     }
 }

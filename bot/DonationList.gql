@@ -9,9 +9,15 @@ query DonationList($search: String $user: String $orderBy: String = "-created" $
 		likeCount
 		user {
 		    id
+		    username
+		    name
+		    firstName
 		}
 		target {
 		    id
+		    username
+		    name
+		    firstName
 		}
 	    }
 	    cursor

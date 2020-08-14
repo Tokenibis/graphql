@@ -2,7 +2,7 @@ query PersonNode($id: ID!) {
     person(id: $id) {
 	id
 	username
-	firstName
 	name
+	firstName
     }
 }
