@@ -1,10 +1,10 @@
-mutation BotUpdate($id: ID! $description: String) {
-    updateBot(id: $id description: $description) {
+mutation BotUpdate($id: ID! $description: String $scratch: String) {
+    updateBot(id: $id description: $description scratch: $scratch) {
 	bot {
 	    id
 	    username
 	    name
-	    firstName
+	    scratch
 	}
     }
 }

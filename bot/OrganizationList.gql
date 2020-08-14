@@ -5,7 +5,6 @@ query OrganizationList($search: String $followedBy: String $followerOf: String $
 		id
 		username
 		name
-		firstName
   	    }
 	    cursor
 	}

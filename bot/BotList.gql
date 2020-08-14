@@ -4,7 +4,6 @@ query BotList($search: String $followedBy: String $followerOf: String $likeFor: 
   	    node {
 		id
 		username
-		firstName
 		name
   	    }
 	    cursor

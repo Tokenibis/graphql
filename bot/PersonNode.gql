@@ -4,5 +4,6 @@ query PersonNode($id: ID!) {
 	username
 	name
 	firstName
+	description
     }
 }
