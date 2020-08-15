@@ -9,6 +9,7 @@ query Bot($id: ID! $self: String){
 	rewarded
 	followerCount
 	followingCount
+	rewardCount
 	eventRsvpCount
 	isFollowing: follower(id: $self) {
 	    edges {
