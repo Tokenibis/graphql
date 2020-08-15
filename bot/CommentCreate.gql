@@ -12,15 +12,6 @@ mutation CommentCreate($user: ID! $parent: ID! $description: String! $scratch: S
 		name
 		firstName
 	    }
-	    mention {
-		edges {
-		    node {
-			id
-			username
-			userType
-		    }
-		}
-	    }
 	}
     }
 }

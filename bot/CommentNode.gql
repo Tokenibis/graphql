@@ -11,16 +11,5 @@ query CommentNode($id: ID!) {
 	    name
 	    firstName
 	}
-	mention {
-	    edges {
-		node {
-		    id
-		    userType
-		    username
-		    name
-		    firstName
-		}
-	    }
-	}
     }
 }

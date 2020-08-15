@@ -1,5 +1,5 @@
-query CommentList($parent: String! $scratch: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
-    allComments(parent: $parent scratch: $scratch orderBy: $orderBy first: $first after: $after) {
+query CommentList($parent: String! $user: String $scratch: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allComments(parent: $parent user: $user scratch: $scratch orderBy: $orderBy first: $first after: $after) {
 	edges {
 	    node {
 		id
@@ -13,17 +13,6 @@ query CommentList($parent: String! $scratch: String $orderBy: String = "-created
 		    username
 		    name
 		    firstName
-		}
-		mention {
-		    edges {
-			node {
-			    id
-			    userType
-			    username
-			    name
-			    firstName
-			}
-		    }
 		}
 	    }
 	}
