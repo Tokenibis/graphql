@@ -1,5 +1,5 @@
-query ActivityList($search: String $user: String $byFollowing: String $bookmarkBy: String $scratch: String $orderBy: String $first: Int! $after: String) {
-    allActivities(search: $search user: $user byFollowing: $byFollowing bookmarkBy: $bookmarkBy scratch: $scratch orderBy: $orderBy first: $first after: $after) {
+query ActivityList($search: String $user: String $scratch: String $active: Boolean $orderBy: String = "-active,-created" $first: Int! $after: String) {
+    allActivities(search: $search user: $user scratch: $scratch active: $active orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id

@@ -1,5 +1,5 @@
-query NotificationList($forUser: String $first: Int! $after: String) {
-    allNotifications(forUser: $forUser orderBy: "-created" first: $first after: $after) {
+query NotificationList($user: String $first: Int! $after: String) {
+    allNotifications(user: $user orderBy: "-created" first: $first after: $after) {
 	edges {
 	    node {
 		id
