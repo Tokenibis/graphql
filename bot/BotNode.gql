@@ -4,8 +4,5 @@ query BotNode($id: ID!) {
 	username
 	name
 	description
-	scratch
-	rewardCount
-	activityCount
     }
 }
