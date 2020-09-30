@@ -1,0 +1,12 @@
+query _Status($id: ID!) {
+    bot(id: $id) {
+	id
+	username
+	name
+	balance
+	description
+	scratch
+	activityCount
+	rewardCount
+    }
+}
