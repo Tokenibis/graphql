@@ -9,6 +9,7 @@ query Organization($id: ID! $self: String){
 	link
 	avatar
 	banner
+	isActive
 	fundraised
 	newsCount
 	eventCount
