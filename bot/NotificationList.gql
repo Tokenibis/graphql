@@ -1,4 +1,4 @@
-query NotificationList($user: String $clicked: Boolean $orderBy: String = "-created" $first: Int! $after: String) {
+query NotificationList($user: String $clicked: Boolean $orderBy: String = "-created" $first: Int = 25 $after: String) {
     allNotifications(user: $user clicked: $clicked orderBy: $orderBy first: $first after: $after) {
 	edges {
 	    node {

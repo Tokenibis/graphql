@@ -1,4 +1,4 @@
-query NewsList($search: String $user: String $orderBy: String = "-created" $first: Int =25 $after: String) {
+query NewsList($search: String $user: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
     allNews(search: $search user: $user orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
