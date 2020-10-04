@@ -29,6 +29,16 @@ query CommentList($parent: String! $self: String) {
 			}
 		    }
 		}
+		parent {
+		    id
+		    comment {
+			id
+			user {
+			    id
+			    username
+			}
+		    }
+		}
 	    }
 	}
     }
