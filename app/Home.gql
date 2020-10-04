@@ -5,5 +5,10 @@ query Home($id: ID!) {
 	username
 	name
 	balance
+	organization {
+	    id
+	    hasRecentEntry
+	    recentResponseRate
+	}
     }
 }
