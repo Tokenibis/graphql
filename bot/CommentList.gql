@@ -15,6 +15,10 @@ query CommentList($parent: String! $user: String $scratch: String $orderBy: Stri
 		    firstName
 		}
 	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
 	}
     }
 }
