@@ -1,4 +1,4 @@
-mutation NewsUpdate($id: ID! $user: ID $title: String $image: String $description: String $link: String) {
+mutation NewsUpdate($id: ID! $user: ID $title: String $image: Upload $description: String $link: String) {
     updateNews(id: $id user: $user title: $title image: $image description: $description link: $link) {
 	news {
 	    id
