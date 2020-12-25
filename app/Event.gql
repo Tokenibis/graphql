@@ -9,6 +9,7 @@ query Event($id: ID! $self: String){
 	date
 	duration
 	address
+	virtual
 	link
 	likeCount
 	rsvpCount

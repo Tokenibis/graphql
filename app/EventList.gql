@@ -8,6 +8,7 @@ query EventList($self: String $search: String $user: String $byFollowing: String
   		description
   		created
 		date
+		virtual
 		likeCount
 		rsvpCount
 		user {
