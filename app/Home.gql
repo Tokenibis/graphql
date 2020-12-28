@@ -9,6 +9,16 @@ query Home($id: ID!) {
 	    id
 	    hasRecentEntry
 	    recentResponseRate
+	    fundraised
+	}
+	person {
+	    id
+	    donated
+	    verified
+	}
+	bot {
+	    id
+	    rewarded
 	}
     }
 }

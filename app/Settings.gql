@@ -1,5 +1,6 @@
 query Settings($id: ID!) {
     user(id: $id) {
+	firstName
 	username
 	description
 	email
@@ -11,6 +12,11 @@ query Settings($id: ID!) {
 	    emailComment
 	    emailMention
 	    emailDeposit
+	}
+	person {
+	    id
+	    verified
+	    phoneNumber
 	}
     }
 }

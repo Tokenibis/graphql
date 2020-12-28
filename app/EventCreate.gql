@@ -1,5 +1,5 @@
-mutation EventCreate($user: ID! $title: String! $image: String! $description: String! $link: String $date: String! $duration: Int! $address: String) {
-    createEvent(user: $user title: $title image: $image description: $description link: $link date: $date duration: $duration address: $address) {
+mutation EventCreate($user: ID! $title: String! $image: Upload $description: String! $link: String $date: String! $duration: Int! $address: String $virtual: Boolean) {
+    createEvent(user: $user title: $title image: $image description: $description link: $link date: $date duration: $duration address: $address virtual: $virtual) {
 	event {
 	    id
 	}
