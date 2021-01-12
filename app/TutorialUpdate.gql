@@ -1,0 +1,7 @@
+mutation TutorialUpdate($id: ID! $tutorial: Boolean!) {
+    updateNotifier(id: $id tutorial: $tutorial) {
+	notifier {
+	    id
+	}
+    }
+}

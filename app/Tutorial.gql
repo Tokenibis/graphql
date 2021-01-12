@@ -1,0 +1,17 @@
+query Tutorial($id: ID!) {
+    notifier(id: $id) {
+	id
+	tutorial
+	user {
+	    id
+	    firstName
+	}
+    }
+    allOrganizations(first: 1 orderBy: "-score") {
+	edges {
+  	    node {
+		id
+	    }
+	}
+    }
+}

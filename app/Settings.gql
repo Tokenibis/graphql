@@ -12,6 +12,7 @@ query Settings($id: ID!) {
 	    emailComment
 	    emailMention
 	    emailDeposit
+	    emailWithdrawal
 	}
 	person {
 	    id
