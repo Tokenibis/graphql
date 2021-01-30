@@ -1,0 +1,32 @@
+query MessageInbox($user: String $orderBy: String = "-messaged_last" $first: Int $after: String) {
+    allUsers(messagedWith: $user orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		name
+		username
+		avatar
+		userType
+		messages (orderBy: "-created" first: 1) {
+		    edges {
+			node {
+			    id
+			    created
+			    description
+			    user {
+				id
+			    }
+			    target {
+				id
+			    }
+			}
+		    }
+		}
+  	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}

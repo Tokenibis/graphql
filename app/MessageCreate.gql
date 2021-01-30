@@ -1,0 +1,7 @@
+mutation MessageCreate($user: ID! $target: ID! $description: String!) {
+    createMessage(user: $user target: $target description: $description) {
+	message {
+	    id
+	}
+    }
+}
