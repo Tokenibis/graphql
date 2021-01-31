@@ -1,5 +1,5 @@
-mutation NotifierUpdate($id: ID! $emailFollow: Boolean $emailDonation: Boolean $emailReward: Boolean $emailComment: Boolean $emailMention: Boolean $emailDeposit: Boolean $emailWithdrawal: Boolean) {
-    updateNotifier(id: $id emailFollow: $emailFollow emailDonation: $emailDonation emailReward: $emailReward emailComment: $emailComment emailMention: $emailMention emailDeposit: $emailDeposit emailWithdrawal: $emailWithdrawal) {
+mutation NotifierUpdate($id: ID! $emailFollow: Boolean $emailDonation: Boolean $emailReward: Boolean $emailComment: Boolean $emailMention: Boolean $emailDeposit: Boolean $emailWithdrawal: Boolean $emailMessage: Boolean) {
+    updateNotifier(id: $id emailFollow: $emailFollow emailDonation: $emailDonation emailReward: $emailReward emailComment: $emailComment emailMention: $emailMention emailDeposit: $emailDeposit emailWithdrawal: $emailWithdrawal emailMessage: $emailMessage) {
 	notifier {
 	    id
 	}
