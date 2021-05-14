@@ -34,6 +34,14 @@ query DonationList($self: String $search: String $withUser: String $withFollowin
 			}
 		    }
 		}
+		commenterRecursive {
+		    edges {
+			node {
+			    id
+			    avatar
+			}
+		    }
+		}
 	    }
 	    cursor
 	}

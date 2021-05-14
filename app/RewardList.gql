@@ -31,6 +31,14 @@ query RewardList($self: String $search: String $withUser: String $withFollowing:
 			}
 		    }
 		}
+		commenterRecursive {
+		    edges {
+			node {
+			    id
+			    avatar
+			}
+		    }
+		}
 	    }
 	    cursor
 	}

@@ -30,6 +30,14 @@ query ActivityList($self: String $search: String $user: String $byFollowing: Str
 			}
 		    }
 		}
+		commenterRecursive {
+		    edges {
+			node {
+			    id
+			    avatar
+			}
+		    }
+		}
 	    }
 	    cursor
 	}

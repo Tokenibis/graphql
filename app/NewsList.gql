@@ -31,6 +31,14 @@ query NewsList($self: String $search: String $user: String $byFollowing: String 
 			}
 		    }
 		}
+		commenterRecursive {
+		    edges {
+			node {
+			    id
+			    avatar
+			}
+		    }
+		}
 	    }
 	    cursor
 	}
