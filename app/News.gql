@@ -22,9 +22,6 @@ query News($id: ID! $self: String){
 	    name
 	    username
 	    avatar
-	    category {
-		id
-	    }
 	}
 	hasLiked: like(id: $self) {
 	    edges {

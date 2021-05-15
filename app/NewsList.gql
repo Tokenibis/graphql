@@ -13,9 +13,6 @@ query NewsList($self: String $search: String $user: String $byFollowing: String 
 		    name
 		    username
 		    avatar
-		    category {
-			id
-		    }
 		}
 		hasLiked: like(id: $self) {
 		    edges {
