@@ -1,0 +1,29 @@
+query MessageChannelInbox($orderBy: String = "-messaged_last" $first: Int $after: String) {
+    allChannels(orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		name
+		messages (orderBy: "-created" first: 1) {
+		    edges {
+			node {
+			    id
+			    created
+			    description
+			    user {
+				id
+			    }
+			    target {
+				id
+			    }
+			}
+		    }
+		}
+  	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}

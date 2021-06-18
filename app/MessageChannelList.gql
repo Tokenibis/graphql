@@ -1,0 +1,21 @@
+query MessageChannelList($withChannel: String! $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allMessagesChannel(withChannel: $withChannel orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		description
+		created
+		user {
+		    id
+		    name
+		    username
+		    avatar
+		}
+	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}

@@ -1,4 +1,4 @@
-query MessageInbox($user: String $orderBy: String = "-messaged_last" $first: Int $after: String) {
+query MessageDirectInbox($user: String $orderBy: String = "-messaged_last" $first: Int $after: String) {
     allUsers(messagedWith: $user orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {

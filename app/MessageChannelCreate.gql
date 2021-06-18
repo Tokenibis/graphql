@@ -1,0 +1,7 @@
+mutation MessageChannelCreate($user: ID! $target: ID! $description: String!) {
+    createMessageChannel(user: $user target: $target description: $description) {
+	messageChannel {
+	    id
+	}
+    }
+}

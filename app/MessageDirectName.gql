@@ -1,4 +1,4 @@
-query MessageUser($id: ID!) {
+query MessageDirectName($id: ID!) {
     user(id: $id) {
 	id
 	name

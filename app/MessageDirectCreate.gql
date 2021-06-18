@@ -1,0 +1,7 @@
+mutation MessageDirectCreate($user: ID! $target: ID! $description: String!) {
+    createMessageDirect(user: $user target: $target description: $description) {
+	messageDirect {
+	    id
+	}
+    }
+}
