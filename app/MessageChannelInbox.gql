@@ -12,6 +12,7 @@ query MessageChannelInbox($orderBy: String = "-messaged_last" $first: Int $after
 			    description
 			    user {
 				id
+				name
 			    }
 			    target {
 				id

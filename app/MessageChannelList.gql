@@ -8,6 +8,7 @@ query MessageChannelList($withChannel: String! $orderBy: String = "-created" $fi
 		user {
 		    id
 		    name
+		    firstName
 		    username
 		    avatar
 		}
