@@ -1,5 +1,5 @@
-query DonationList($self: String $search: String $withUser: String $withFollowing: String $includeInvestment: Boolean = false $withInvestment: String $bookmarkBy: String $orderBy: String $first: Int! $after: String) {
-    allDonations(search: $search withUser: $withUser withFollowing: $withFollowing withInvestment: $withInvestment bookmarkBy: $bookmarkBy orderBy: $orderBy first: $first after: $after) {
+query DonationList($self: String $search: String $withUser: String $withFollowing: String $includeGrant: Boolean = false $withGrant: String $bookmarkBy: String $orderBy: String $first: Int! $after: String) {
+    allDonations(search: $search withUser: $withUser withFollowing: $withFollowing withGrant: $withGrant bookmarkBy: $bookmarkBy orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id
@@ -42,7 +42,7 @@ query DonationList($self: String $search: String $withUser: String $withFollowin
 			}
 		    }
 		}
-		investmentAmount(withInvestment: $withInvestment) @include(if: $includeInvestment) {
+		grantAmount(withGrant: $withGrant) @include(if: $includeGrant) {
 		    edges {
 			node {
 			    id

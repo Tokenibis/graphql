@@ -1,0 +1,21 @@
+query GrantList($user: String $orderBy: String = "-start" $first: Int! $after: String) {
+    allGrants(user: $user orderBy: $orderBy first: $first after: $after) {
+	edges {
+  	    node {
+		id
+		name
+		amount
+		start
+		end
+		description
+		user {
+		    id
+		}
+	    }
+	    cursor
+	}
+	pageInfo {
+	    hasNextPage
+	}
+    }
+}
