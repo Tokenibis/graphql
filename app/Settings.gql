@@ -6,12 +6,11 @@ query Settings($id: ID!) {
 	email
 	notifier {
 	    id
-	    emailFollow
 	    emailDonation
 	    emailReward
 	    emailComment
 	    emailMention
-	    emailDeposit
+	    emailGrant
 	    emailWithdrawal
 	    emailMessage
 	}
