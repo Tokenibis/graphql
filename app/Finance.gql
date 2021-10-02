@@ -1,0 +1,6 @@
+query Finance($id: ID!) {
+    user(id: $id) {
+	id
+	balance
+    }
+}
