@@ -1,5 +1,5 @@
-query DonationList($search: String $user: String $grant: String $createdAfter: String  $createdBefore: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
-    allDonations(search: $search user: $user grant: $grant createdAfter: $createdAfter createdBefore: $createdBefore orderBy: $orderBy first: $first after: $after) {
+query DonationList($search: String $user: String $withGrant: String $createdAfter: String  $createdBefore: String $orderBy: String = "-created" $first: Int = 25 $after: String) {
+    allDonations(search: $search user: $user withGrant: $withGrant createdAfter: $createdAfter createdBefore: $createdBefore orderBy: $orderBy first: $first after: $after) {
 	edges {
   	    node {
 		id
