@@ -42,7 +42,7 @@ query DonationList($self: String $search: String $withUser: String $withFollowin
 			}
 		    }
 		}
-		grantAmount(withGrant: $withGrant) @include(if: $includeGrant) {
+		grantdonationSet(withGrant: $withGrant) @include(if: $includeGrant) {
 		    edges {
 			node {
 			    id

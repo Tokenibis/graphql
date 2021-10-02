@@ -11,6 +11,20 @@ query GrantList($user: String $orderBy: String = "-start" $first: Int! $after: S
 		user {
 		    id
 		}
+		grantdonationSet {
+		    edges {
+			node {
+			    id
+			    amount
+			    donation {
+				id
+				target {
+				    id
+				}
+			    }
+			}
+		    }
+		}
 	    }
 	    cursor
 	}
