@@ -10,7 +10,7 @@ query Settings($id: ID!) {
 	    emailReward
 	    emailComment
 	    emailMention
-	    emailGrant
+	    emailDeposit
 	    emailWithdrawal
 	    emailMessage
 	    emailGrant
