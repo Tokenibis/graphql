@@ -8,6 +8,9 @@ query GrantList($user: String $orderBy: String = "-created" $first: Int! $after:
 		duration
 		created
 		description
+		numDonations
+		numOrganizations
+		fundedAmount
 		user {
 		    id
 		}
