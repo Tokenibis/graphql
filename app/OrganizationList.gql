@@ -7,9 +7,6 @@ query OrganizationList($self: String $search: String $followedBy: String $orderB
 		name
 		avatar
   		description
-		category {
-		    id
-		}
 		isFollowing: follower(id: $self) {
 		    edges {
 			node {

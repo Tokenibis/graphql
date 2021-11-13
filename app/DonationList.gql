@@ -16,9 +16,6 @@ query DonationList($self: String $search: String $withUser: String $withFollowin
 		target {
 		    id
 		    name
-		    category {
-			id
-		    }
 		}
 		hasLiked: like(id: $self) {
 		    edges {

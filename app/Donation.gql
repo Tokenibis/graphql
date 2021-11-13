@@ -25,9 +25,6 @@ query Donation($id: ID! $self: String){
 	    id
 	    username
 	    name
-	    category {
-		id
-	    }
 	}
 	hasLiked: like(id: $self) {
 	    edges {
