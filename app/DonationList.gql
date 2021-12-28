@@ -5,7 +5,6 @@ query DonationList($self: String $search: String $withUser: String $withFollowin
 		id
 		amount
 		description
-		private
 		created
 		likeCount
 		user {

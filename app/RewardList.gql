@@ -5,7 +5,6 @@ query RewardList($self: String $search: String $withUser: String $withFollowing:
 		id
 		amount
 		description
-		private
 		created
 		likeCount
 		user {
