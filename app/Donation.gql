@@ -39,5 +39,16 @@ query Donation($id: ID! $self: String){
 		}
 	    }
 	}
+	grantdonationSet(orderBy: "-amount") {
+	    edges {
+		node {
+		    id
+		    grant {
+			id
+			name
+		    }
+		}
+	    }
+	}
     }
 }
